@@ -1,0 +1,12 @@
+.formulario_container{
+    display:flex;
+    text-align: center;
+    margin:30px 30px 30px 30px;
+    gap:20px;
+}
+
+.formulario_linea{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
