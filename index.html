@@ -10,29 +10,35 @@
     <div class="formulario_container">
         <fieldset>
             <legend>Valoración pacientes</legend> 
-            <form  action="mailto:gsfisioterapiaclientes@gmail.com" method="post" enctype="text/plain"> 
-                <!-- <form method="post" action="mailto:gsfisioterapiaclientes@gmail.com"
+            <form id="miFormulario" > 
+                <!-- <form method="post" action="mailto:gsfisioterapiaclientes@gmail.com" enctype="text/plain"
 Esto en principio sirve para enviar el correo a gsfisioterapiaclientes@gmail.com
             -->
                 <label>
                     <div class="formulario_linea">
-                        <b>Nombre y apellidos</b>&nbsp;
-                        <input type="text"  placeholder="Nombre y Apellidos"/>
-                        <b>Numero de movil</b>  &nbsp;
-                        <input type="number"  placeholder="+34" />
-                       <b> Fecha</b> &nbsp;
-                        <input type="date"  />
+                        <b>Nombre y apellidos</b>&nbsp; <b>Numero de movil</b>  &nbsp;
+                        <b> Fecha</b> &nbsp;
                         <b>DNI </b>&nbsp;
-                        <input type="text"  />
+                      </div>
+                        <div class="formulario_linea">
+                        <input type="text" id="nombre" placeholder="Nombre y Apellidos" required/>
+                        &nbsp;
+                        <input type="number"  placeholder="+34"  id="movil" required/>
+                        &nbsp;
+                        <input type="date" id="fecha" />
+                        &nbsp;
+                        <input type="text" id="dni" />&nbsp;
                     </div>
                  
                 <br>
                 <div class="formulario_linea">
-                    <b>Correo Electronico </b>&nbsp;
-                    <input type="email" placeholder="@" />
-                    <b>Numero Sesión </b>&nbsp;
-                    <input type="number"  />
-                    <label> <b>Forma de pago</b> &nbsp; </label>
+                    <b>Correo Electronico </b>&nbsp; <b>Numero Sesión </b>&nbsp; <label> <b>Forma de pago</b> &nbsp; </label>
+                    
+                </div>
+                <div class="formulario_linea">
+                  <input type="email" placeholder="@" id="email"/>
+                    
+                    <input type="number" id="Forma_de_Pago" />
                   <select>
                     <option value="Efectivo">Efectivo</option>
                     <option value="Tarjeta">Tarjeta</option>
@@ -45,83 +51,118 @@ Esto en principio sirve para enviar el correo a gsfisioterapiaclientes@gmail.com
               <br>
               <div class="formulario_linea">
                 <b>Zona de dolor </b>&nbsp;
-                <input type="textarea"  />
                 <b>Intensidad dolor </b>&nbsp;
-                <input type="number" placeholder="Eva: 0/10" />
                 <b>Desde cuando le duele? </b>&nbsp;
-                <input type="textarea"  />
+              </div>
+              <div class="formulario_linea">
+                <input type="textarea" id="zona_de_dolor" />
+                
+                <input type="number" placeholder="Eva: 0/10" id="Eva" />
+                
+                <input type="textarea" id="Duraciónsintomas" />
               </div>
               
                 <br>
                 <div class="formulario_linea">
                    <b> Descripción subjetiva del paciente </b>&nbsp;
-                    <input type="textarea" rows="4" cols="4" placeholder="Autodiagnostico, palabras del paciente" />
                    <b> Diagnostico medico y diagnostico de imagen </b>&nbsp;
+                  <b>Caracteristicas temporales </b>&nbsp;
+                </div>
+                <div class="formulario_linea">
+                    <input type="textarea" id="Descripción_paciente" rows="4" cols="4" placeholder="Autodiagnostico, palabras del paciente" />
+                   
                     <input type="textarea"  />
-                   <b>Caracteristicas temporales </b>&nbsp;
+                   
                     <input type="textarea"  />
                 </div>
                 
                 <br>
                 <div class="formulario_linea">
                    <b> Bandera Roja </b>&nbsp;
-                    <input type="textarea" placeholder="Historia de neoplasia, trauma, perdidad de peso o inmunodeficiencia, fiebre ,anestesia, dolor que empeora/depierta por las noches" />
                    <b> Bandera Amarilla </b>&nbsp;
-                    <input type="textarea" placeholder="Creencias o prejuicios equivocados, kinesiofobia, respuestas emocionales y formas de afrontar el dolor, "  />
-                   <b> Bandera Blue </b>&nbsp;
-                    <input type="textarea" placeholder="Relación entre salúd y trabajo"  />
-                   <b> Bandera Black </b>&nbsp;
-                    <input type="textarea" placeholder="Obstaculos contextuales: problemas economicos, falta de tiempo, dependencia para los desplazamientos, desconfianza hacía el personal sanitario o sobre las funciones de la fisioterapia en el percorso rehabilitativo "  />
+                    <b> Bandera Blue </b>&nbsp;
+                    <b> Bandera Black </b>&nbsp;
                     <b>Bandera Naranja</b>&nbsp;
+                </div>
+                <div class="formulario_linea">
+                    <input type="textarea" placeholder="Historia de neoplasia, trauma, perdidad de peso o inmunodeficiencia, fiebre ,anestesia, dolor que empeora/depierta por las noches" />
+                   
+                    <input type="textarea" placeholder="Creencias o prejuicios equivocados, kinesiofobia, respuestas emocionales y formas de afrontar el dolor, "  />
+                   
+                    <input type="textarea" placeholder="Relación entre salúd y trabajo"  />
+                   
+                    <input type="textarea" placeholder="Obstaculos contextuales: problemas economicos, falta de tiempo, dependencia para los desplazamientos, desconfianza hacía el personal sanitario o sobre las funciones de la fisioterapia en el percorso rehabilitativo "  />
+                    
                     <input type="textarea" placeholder="sintomas psiquicos: Tratamiento de depresión, ansiedad toma de farmacos antidepresivos o ansioliticos" />
                     
                 </div>
                 <br>
                 <div class="formulario_linea">
                     <b>Preferencias del tratamiento</b>&nbsp;
+                    <b>Tratamientos de otros profesionales</b>&nbsp;
+<b>Medicación</b>&nbsp;
+                </div>
+                <div class="formulario_linea">
                     <input type="textarea" placeholder="Son Amplificadores del efecto placebo y del adherencia al tratamiento" />
-                <b>Tratamientos de otros profesionales</b>&nbsp;
+                
                 <input type="textarea" placeholder="Está o ha sido tratada por otros especialistas/terapeutas ? Que tratamientos ha estado recibiendo?" />
-                <b>Medicación</b>&nbsp;
+                
                     <input type="textarea"  `placeholder="Insertar nombre, preguntar para que sirve, dosis y desde hace cuanto tiempo lo está tomando"/>
             </div>
                 <br>
 
                 <div class="formulario_linea">
                    <b> Gastroenterologia</b>&nbsp;
+                   <b>Dermatologia</b>&nbsp;
+<b>Problemas Cardiacos</b>&nbsp;
+<b>Endocrinologia</b>&nbsp;
+                </div>
+                <div class="formulario_linea">
                     <input type="textarea" placeholder="Muy utíl en problemas digestivos" />
-                    <b>Dermatologia</b>&nbsp;
+                    
                     <input type="textarea" placeholder="problemas de piel" />
-                    <b>Problemas Cardiacos</b>&nbsp;
+                    
                     <input type="textarea"  placeholder="marcapasos, hipertensión arterial" />
-                    <b>Endocrinologia</b>&nbsp;
+                    
                     <input type="textarea" placeholder="Diabetes, hipercolesterolemia, ovario poliquisticos, tiroides" />
                 </div>
                 <br>
 
                 <div class="formulario_linea">
                     <b>Hematologia</b>&nbsp;
-                    <input type="textarea" placeholder="Analiticas" />
                     <b>Nefrologia y urologia</b>&nbsp;
+<b> Neumología</b>&nbsp;
+<b>  Oncología</b>&nbsp;
+<b>  Neurología</b>&nbsp;
+                </div>
+                <div class="formulario_linea">
+                    <input type="textarea" placeholder="Analiticas" />
+                    
                     <input type="textarea" placeholder="Riñon y problemas del suelo pelvico" />
-                  <b> Neumología</b>&nbsp;
+                  
                     <input type="textarea" placeholder="fumadores, Epoc, covid/persistente"  />
-                  <b>  Oncología</b>&nbsp;
+                  
                     <input type="textarea"  />
-                  <b>  Neurología</b>&nbsp;
+                  
                     <input type="textarea" placeholder="Alzheimer, migrañas, epilepsias, parkinson, ictus" />
                 </div>
                 <br>
                 <div class="formulario_linea">
                   <b>  Alergología</b>&nbsp;
+                  <b>Cirugía</b>&nbsp;
+                  <b>Medicina del deporte</b>&nbsp;
+                  <b>Unidad del sueño</b>&nbsp;
+                  <b>Objetivos del Paciente</b>&nbsp;
+                </div>
+                <div class="formulario_linea">
                     <input type="textarea"  placeholder="Alergias e intolerancias"/>
-                  <b>  Cirugía</b>&nbsp;
+                    
                     <input type="textarea" placeholder="impantes osteosintesis" />
-                  <b>  Medicina del deporte</b>&nbsp;
-                    <input type="textarea" placeholder="actividad fisica <150 min per semana, sobrepeso o sarcopenia" />
-                  <b>  Unidad del sueño</b>&nbsp;
+                    
+                    <input type="textarea" placeholder="actividad fisica < 150 min per semana, sobrepeso o sarcopenia" />
+                    
                     <input type="textarea" placeholder="Duerme menos de 8 horas, piernas inquietas" />
-                  <b>  Objetivos del Paciente</b>&nbsp;
+                   
                 <input type="textarea" rows="4" cols="50" placeholder="Las expectativas son realistas?" />   
                 </div>
                 
@@ -129,13 +170,13 @@ Esto en principio sirve para enviar el correo a gsfisioterapiaclientes@gmail.com
                 
                 <br />
                 <button>Valoración del terapeuta</button>
-                <input type="submit" value="Enviar" />
+                <input type="button" value="Enviar" onclick="enviarFormulario()" />
               <input type="reset" value="Borrar todo" />
                 <label>
               </form>
         </fieldset>
 
     </div>
-    
+    <script src="envioformulario.js"></script>
 </body>
 </html>
