@@ -45,7 +45,7 @@ table {
 .formulario_container{
     /*Flex*/
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*mobile first property*/
     text-align: center;
     justify-content: center;
     gap:20px;
@@ -60,6 +60,7 @@ table {
 
 .formulario_linea{
     display:flex;
+    flex-wrap: wrap; /*mobile first property*/
     justify-content: space-between;
     text-align: center;
     width: 75vw;
