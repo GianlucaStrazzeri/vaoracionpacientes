@@ -7,3 +7,4 @@ function enviarFormulario() {
 
     console.log(nombre+movil+fecha);
 }
+enviarFormulario();
