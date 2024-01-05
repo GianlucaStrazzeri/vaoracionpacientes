@@ -16,134 +16,166 @@ Esto en principio sirve para enviar el correo a gsfisioterapiaclientes@gmail.com
             -->
                 <label>
                     <div class="formulario_linea">
-                        <b>Nombre y apellidos</b>&nbsp; <b>Numero de movil</b>  &nbsp;
-                        <b> Fecha</b> &nbsp;
-                        <b>DNI </b>&nbsp;
-                      </div>
-                        <div class="formulario_linea">
+                      <div class="formulario_columnas">
+                        <b>Nombre y apellidos</b>&nbsp;
                         <input type="text" id="nombre" placeholder="Nombre y Apellidos" required/>
                         &nbsp;
-                        <input type="number"  placeholder="+34"  id="movil" required/>
-                        &nbsp;
-                        <input type="date" id="fecha" />
-                        &nbsp;
-                        <input type="text" id="dni" />&nbsp;
-                    </div>
+                      </div>
+                         
+                        <div class="formulario_columnas">
+                          <b>Numero de movil</b>  &nbsp;
+                          <input type="number"  placeholder="+34"  id="movil" required/>
+                          &nbsp;
+                        </div>
+                        
+                        <div class="formulario_columnas">
+                          <b> Fecha</b> &nbsp;
+                          <input type="date" id="fecha" />
+                          &nbsp;
+                        </div>
+                        
+                        <div class="formulario_columnas">
+                          <b>DNI </b>&nbsp;
+                          <input type="text" id="dni" />&nbsp;
+                        </div>
+                        
+                      </div>
+                        
                  
                 <br>
+
+
                 <div class="formulario_linea">
-                    <b>Correo Electronico </b>&nbsp; <b>Numero Sesión </b>&nbsp; <label> <b>Forma de pago</b> &nbsp; </label>
+                  <div class="formulario_columnas">
+                    <b>Correo Electronico </b>&nbsp;
+                    <input type="email" placeholder="@" id="email"/>
+                  </div>
                     
+                    <div class="formulario_columnas">
+                      <b>Numero Sesión </b>&nbsp;
+                      <input type="number" id="Forma_de_Pago" />
+                    </div> 
+                    <div class="formulario_columnas">
+                      <label> <b>Forma de pago</b> &nbsp; </label>
+                      <select>
+                        <option value="Efectivo">Efectivo</option>
+                        <option value="Tarjeta">Tarjeta</option>
+                        <option value="Bizum">Bizum</option>
+                        <option value="Bono">Bono</option>
+                        <option value="Debe pagar">Debe pagar</option>
+                      </select>
+                    </div> 
                 </div>
-                <div class="formulario_linea">
-                  <input type="email" placeholder="@" id="email"/>
-                    
-                    <input type="number" id="Forma_de_Pago" />
-                  <select>
-                    <option value="Efectivo">Efectivo</option>
-                    <option value="Tarjeta">Tarjeta</option>
-                    <option value="Bizum">Bizum</option>
-                    <option value="Bono">Bono</option>
-                    <option value="Debe pagar">Debe pagar</option>
-                  </select>
-                </div>
+                
                 
               <br>
               <div class="formulario_linea">
-                <b>Zona de dolor </b>&nbsp;
-                <b>Intensidad dolor </b>&nbsp;
-                <b>Desde cuando le duele? </b>&nbsp;
-              </div>
-              <div class="formulario_linea">
-                <input type="textarea" id="zona_de_dolor" />
+                <div class="formulario_columnas">
+                  <b>Zona de dolor </b>&nbsp;
+                  <input type="textarea" id="zona_de_dolor" />
+                </div>
                 
-                <input type="number" placeholder="Eva: 0/10" id="Eva" />
+                <div class="formulario_columnas">
+                  <b>Intensidad dolor </b>&nbsp;
+                  <input type="number" placeholder="Eva: 0/10" id="Eva" />
+                </div>
                 
-                <input type="textarea" id="Duraciónsintomas" />
+                <div class="formulario_columnas">
+                  <b>Desde cuando le duele? </b>&nbsp;
+                  <input type="textarea" id="Duraciónsintomas" />
+                </div>
+                
               </div>
               
+              
                 <br>
-                <div class="formulario_linea">
-                   <b> Descripción subjetiva del paciente </b>&nbsp;
-                   <b> Diagnostico medico y diagnostico de imagen </b>&nbsp;
-                  <b>Caracteristicas temporales </b>&nbsp;
+                <div class="formulario_linea"><div class="formulario_columnas">
+                  <b> Descripción subjetiva del paciente </b>&nbsp;
+                  <input type="textarea" id="Descripción_paciente" rows="4" cols="4" placeholder="Autodiagnostico, palabras del paciente" />
+                 
                 </div>
-                <div class="formulario_linea">
-                    <input type="textarea" id="Descripción_paciente" rows="4" cols="4" placeholder="Autodiagnostico, palabras del paciente" />
-                   
+                   <div class="formulario_columnas">
+                    <b> Diagnostico medico y diagnostico de imagen </b>&nbsp;
                     <input type="textarea" id="DiagnosticoMedico" />
                    
+                   </div>
+                   <div class="formulario_columnas">
+                    <b>Caracteristicas temporales </b>&nbsp;
                     <input type="textarea" id="caracteristicasTemporales"  />
+  
+                   </div>
+                  
                 </div>
+                
                 
                 <br>
                 <div class="formulario_linea">
+                
+                  <div class="formulario_columnas">
                    <b> Bandera Roja </b>&nbsp;
+                   <input type="textarea" id="banderaRoja" placeholder="Historia de neoplasia, trauma, perdidad de peso o inmunodeficiencia, fiebre ,anestesia, dolor que empeora/depierta por las noches" />
+                                   </div>
+                                   <div class="formulario_columnas">
                    <b> Bandera Amarilla </b>&nbsp;
+                   <input type="textarea" id="banderaAmarilla" placeholder="Creencias o prejuicios equivocados, kinesiofobia, respuestas emocionales y formas de afrontar el dolor, "  />
+                                   </div>
+                                   <div class="formulario_columnas">
                     <b> Bandera Blue </b>&nbsp;
-                    <b> Bandera Black </b>&nbsp;
-                    <b>Bandera Naranja</b>&nbsp;
-                </div>
-                <div class="formulario_linea">
-                    <input type="textarea" id="banderaRoja" placeholder="Historia de neoplasia, trauma, perdidad de peso o inmunodeficiencia, fiebre ,anestesia, dolor que empeora/depierta por las noches" />
-                   
-                    <input type="textarea" id="banderaAmarilla" placeholder="Creencias o prejuicios equivocados, kinesiofobia, respuestas emocionales y formas de afrontar el dolor, "  />
-                   
                     <input type="textarea" id="banderaBlue" placeholder="Relación entre salúd y trabajo"  />
-                   
+                                    </div>
+                                    <div class="formulario_columnas">
+                    <b> Bandera Black </b>&nbsp;
                     <input type="textarea" id="banderaBlack" placeholder="Obstaculos contextuales: problemas economicos, falta de tiempo, dependencia para los desplazamientos, desconfianza hacía el personal sanitario o sobre las funciones de la fisioterapia en el percorso rehabilitativo "  />
-                    
+                                    </div>
+                                    <div class="formulario_columnas">
+                    <b>Bandera Naranja</b>&nbsp;
                     <input type="textarea" id="banderaNaranja" placeholder="sintomas psiquicos: Tratamiento de depresión, ansiedad toma de farmacos antidepresivos o ansioliticos" />
-                    
+                                  </div>
                 </div>
+                
                 <br>
                 <div class="formulario_linea">
+<div class="formulario_columnas">
                     <b>Preferencias del tratamiento</b>&nbsp;
-                    <b>Tratamientos de otros profesionales</b>&nbsp;
-                    <b>Medicación</b>&nbsp;
-                </div>
-                <div class="formulario_linea">
                     <input type="textarea" id="preferenciasDelTratamiento" placeholder="Son Amplificadores del efecto placebo y del adherencia al tratamiento" />
-                
+                    </div><div class="formulario_columnas">
+                    <b>Tratamientos de otros profesionales</b>&nbsp;
                 <input type="textarea" id="tratamientosDeOtros" placeholder="Está o ha sido tratada por otros especialistas/terapeutas ? Que tratamientos ha estado recibiendo?" />
-                
+                </div><div class="formulario_columnas">
+                <b>Medicación</b>&nbsp;
                     <input type="textarea" id="medicación" `placeholder="Insertar nombre, preguntar para que sirve, dosis y desde hace cuanto tiempo lo está tomando"/>
             </div>
                 <br>
-
+              </div>
                 <div class="formulario_linea">
+<div class="formulario_columnas">
                    <b> Gastroenterologia</b>&nbsp;
-                   <b>Dermatologia</b>&nbsp;
-<b>Problemas Cardiacos</b>&nbsp;
-<b>Endocrinologia</b>&nbsp;
-                </div>
-                <div class="formulario_linea">
+
                     <input type="textarea" placeholder="Muy utíl en problemas digestivos" />
-                    
+                </div><div class="formulario_columnas">
+                    <b>Dermatologia</b>&nbsp;
                     <input type="textarea" placeholder="problemas de piel" />
-                    
+                </div><div class="formulario_columnas">
+                    <b>Problemas Cardiacos</b>&nbsp;
                     <input type="textarea"  placeholder="marcapasos, hipertensión arterial" />
-                    
+                </div><div class="formulario_columnas">
+                    <b>Endocrinologia</b>&nbsp;
                     <input type="textarea" placeholder="Diabetes, hipercolesterolemia, ovario poliquisticos, tiroides" />
-                </div>
+                               </div>
+                  </div>
                 <br>
 
                 <div class="formulario_linea">
                     <b>Hematologia</b>&nbsp;
-                    <b>Nefrologia y urologia</b>&nbsp;
-<b> Neumología</b>&nbsp;
-<b>  Oncología</b>&nbsp;
-<b>  Neurología</b>&nbsp;
-                </div>
-                <div class="formulario_linea">
+
                     <input type="textarea" placeholder="Analiticas" />
-                    
+                    <b>Nefrologia y urologia</b>&nbsp;
                     <input type="textarea" placeholder="Riñon y problemas del suelo pelvico" />
-                  
+                    <b> Neumología</b>&nbsp;
                     <input type="textarea" placeholder="fumadores, Epoc, covid/persistente"  />
-                  
+                    <b>  Oncología</b>&nbsp;
                     <input type="textarea"  />
-                  
+                    <b>  Neurología</b>&nbsp;
                     <input type="textarea" placeholder="Alzheimer, migrañas, epilepsias, parkinson, ictus" />
                 </div>
                 <br>

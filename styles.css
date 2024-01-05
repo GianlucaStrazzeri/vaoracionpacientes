@@ -66,3 +66,12 @@ table {
     width: 75vw;
     margin:2px 2px 2px 2px;
 }
+
+.formulario_columnas{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
