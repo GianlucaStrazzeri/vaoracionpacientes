@@ -42,10 +42,19 @@ table {
 	border-spacing: 0;
 }
 
+/*My css from here*/
+
+
+body{
+    background-color: yellowgreen;
+    display:flex;
+}
+
 .formulario_container{
     /*Flex*/
     display:flex;
     flex-wrap: wrap; /*mobile first property*/
+    flex-grow: 0.8;
     text-align: center;
     justify-content: center;
     gap:20px;
@@ -55,6 +64,7 @@ table {
     -webkit-box-shadow: -9px 46px 113px 0px rgba(191,17,191,1);
     -moz-box-shadow: -9px 46px 113px 0px rgba(191,17,191,1);
     box-shadow: -9px 46px 113px 0px rgba(191,17,191,1);
+    background-color: antiquewhite;
     
 }
 
@@ -64,14 +74,22 @@ table {
     justify-content: space-between;
     text-align: center;
     width: 75vw;
-    margin:2px 2px 2px 2px;
+    margin:10px 2px 2px 10px;
+    
 }
 
 .formulario_columnas{
     display:flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 0.9;
     align-items: center;
     text-align: center;
-    
+    background-color: brown;
+    padding:10px 40px 20px 40px;
+    gap:3px;
+}
+
+input{
+    text-align: center;
 }
