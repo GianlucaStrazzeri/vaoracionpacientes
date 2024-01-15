@@ -86,8 +86,26 @@ gap:60px;
     height:500px;
 }
 
+.subtitle-index{
+font-size: 50px;
+}
+
+.background-parte-izquierda{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
 .button-intobackground{
     background-color: #16CBA0;
+    color:white;
+    width:30%;
+    padding:10px 10px 10px 10px;
+
+}
+
+.button-intobackground:hover{
+    transform: scale(1.5) ;
 }
 
 
