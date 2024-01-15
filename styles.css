@@ -45,7 +45,7 @@ table {
 /*My css from here*/
 
 
-body{
+.body{
     background-color: yellowgreen;
     display:flex;
 }
@@ -83,6 +83,8 @@ body{
     flex-direction: column;
     justify-content: center;
     flex-grow: 0.9;
+    /* Flex grow permite adaptar el crecimiento de algo de acuerdo con los demás
+    elementos de forma automatica*/
     align-items: center;
     text-align: center;
     background-color: brown;
@@ -92,4 +94,18 @@ body{
 
 input{
     text-align: center;
+}
+
+.titulo-formulario{
+    font-weight: 700;
+    border:4px red solid;
+    font-size: large;
+}
+
+.experiment_hidden{
+    opacity: 100%;
+}
+
+.experiment.hidden{
+    opacity:0%;
 }

@@ -1,6 +1,8 @@
 
 
 function enviarFormulario() {
+patientinformation=[];
+
     let nombre = document.getElementById("nombre").value;
     let movil = document.getElementById("movil").value;
     let fecha = document.getElementById("fecha").value;
@@ -22,7 +24,12 @@ function enviarFormulario() {
     let tratamientosDeOtros = document.getElementById("tratamientosDeOtros").value;
     let medicación = document.getElementById("medicación").value;
 
-
-    console.log(nombre+movil+fecha+dni+email+formaDePago+zonaDeDolor+eva+duraciónsintomas+descripciónPaciente +diagnosticoMedico+caracteristicasTemporales+banderaRoja+banderaAmarilla+banderaBlue+banderaBlack+banderaNaranja+preferenciasDelTratamiento+tratamientosDeOtros+medicación);
+patientinformation.push(nombre+movil+fecha+dni+email+formaDePago+zonaDeDolor+eva+duraciónsintomas+descripciónPaciente +diagnosticoMedico+caracteristicasTemporales+banderaRoja+banderaAmarilla+banderaBlue+banderaBlack+banderaNaranja+preferenciasDelTratamiento+tratamientosDeOtros+medicación)
+    
+console.log(nombre+movil+fecha+dni+email+formaDePago+zonaDeDolor+eva+duraciónsintomas+descripciónPaciente +diagnosticoMedico+caracteristicasTemporales+banderaRoja+banderaAmarilla+banderaBlue+banderaBlack+banderaNaranja+preferenciasDelTratamiento+tratamientosDeOtros+medicación);
+console.log(patientinformation);
 }
 enviarFormulario();
+
+
+
