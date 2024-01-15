@@ -44,6 +44,59 @@ table {
 
 /*My css from here*/
 
+/*index*/
+
+.menu-flotante-flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px 30px 10px 30px;
+}
+
+.logo:hover{
+    transform: scale(1.5) translateX(20px);
+}
+
+.menu-flotante-derecha{
+display:flex;
+align-items: center;
+gap:60px;
+}
+
+.button-blue{
+    background:#022A4E;
+    color:white;
+    padding:10px 10px 10px 10px;
+}
+
+.button-blue:hover{
+    background:#1b9de9;
+    color:black;
+    transform: scale(1.5) translateX(-20px);
+}
+
+
+
+.background-blue-index{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: #E3F4FE;
+    height:500px;
+}
+
+.button-intobackground{
+    background-color: #16CBA0;
+}
+
+
+.carrousel{
+    display:flex;
+    gap:20px;
+}
+
+/*Valoración pacientes*/
 
 .body{
     background-color: yellowgreen;
