@@ -114,6 +114,15 @@ font-size: 50px;
     gap:20px;
 }
 
+/*Utilizar este comando para hacer desaparecer la imagen en movil*/
+@media  screen and (max-width: 600px){
+    .mobile-hidden{
+        opacity: 0;
+        }
+}
+
+
+
 /*Valoración pacientes*/
 
 .body{
